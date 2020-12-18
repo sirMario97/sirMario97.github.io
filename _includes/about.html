@@ -3,11 +3,215 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Abilities</h2>
+                    <h3 class="section-subheading text-muted">
+                        <!-- El reparto más equitativo que existe es el de la inteligencia: todo el mundo cree tener suficiente. -->
+                        <p>"The fairest distribution that exists is that of intelligence: everyone thinks they have enough"</p>
+                        <p>- Noel Clarasó.</p>
+                    </h3>
                 </div>
             </div>
+            <hr>
+            <h3>Skills</h3>
             <div class="row">
+                <div class="col-lg-12" style="display:flex; justify-content: space-evenly !important;">
+                    {% assign tam = site.skills.size %}                
+                    {% assign limite =  tam | divided_by: 2 %}
+                    {% assign residuo = tam | modulo: 2 %}
+                    {% assign inicio = 0 %}
+                    {% assign columnas = tam | divided_by: limite %}
+                    {% assign limite = limite | plus: residuo %}
+                    {% for i in (1..columnas) %}
+                        <div class="col-md-6">
+                            <ul class="no-bullets">
+                                {% for skill in site.skills offset:inicio limit:limite %}<!--offset indica desde que elemento empieza, 
+                                                                                limit indica cuantos va a tomar el for-->
+                                        <li class="hvr-grow hvr-icon-pulse">
+                                            <span style="float: left;">{{ skill.name }}</span>
+                                            <span style="float: right;">
+                                            {% case skill.domine %}
+                                                {% when 1 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 2 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 3 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 4 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 5 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                {% else %}
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>                                                
+                                            {% endcase %}
+                                            </span>
+                                        </li>
+                                {% endfor %} 
+                            </ul>
+                        </div>
+                        {% assign inicio = inicio | plus: limite %}
+                    {% endfor %} 
+                </div>
+            </div>
+            <hr>
+            <h3>Languages</h3>
+            <div class="row">
+                <div class="col-lg-12" style="display:flex; justify-content: space-evenly !important;">                
+                    {% assign tam = site.languages.size %}                
+                    {% assign limite =  tam | divided_by: 2 %}
+                    {% assign residuo = tam | modulo: 2 %}
+                    {% assign inicio = 0 %}
+                    {% assign columnas = tam | divided_by: limite %}
+                    {% assign limite = limite | plus: residuo %}
+                    {% for i in (1..columnas) %}
+                        <div class="col-md-6">
+                            <ul class="no-bullets">
+                                {% for skill in site.languages offset:inicio limit:limite %}<!--offset indica desde que elemento empieza, 
+                                                                                limit indica cuantos va a tomar el for-->
+                                        <li class="hvr-grow hvr-icon-pulse">
+                                            <span style="float: left;">{{ skill.name }}</span>
+                                            <span style="float: right;">
+                                            {% case skill.domine %}
+                                                {% when 1 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 2 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 3 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 4 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 5 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                {% else %}
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>                                                
+                                            {% endcase %}
+                                            </span>
+                                        </li>
+                                {% endfor %} 
+                            </ul>
+                        </div>
+                        {% assign inicio = inicio | plus: limite %}
+                    {% endfor %} 
+                </div>
+            </div>
+
+            <hr>
+            <h3>Tools</h3>
+            <div class="row">
+                <div class="col-lg-12" style="display:flex; justify-content: space-evenly !important;">                
+                    {% assign tam = site.tools.size %}                
+                    {% assign limite =  tam | divided_by: 2 %}
+                    {% assign residuo = tam | modulo: 2 %}
+                    {% assign inicio = 0 %}
+                    {% assign columnas = tam | divided_by: limite %}
+                    {% assign limite = limite | plus: residuo %}
+                    {% for i in (1..columnas) %}
+                        <div class="col-md-6">
+                            <ul class="no-bullets">
+                                {% for skill in site.tools offset:inicio limit:limite %}<!--offset indica desde que elemento empieza, 
+                                                                                limit indica cuantos va a tomar el for-->
+                                        <li class="hvr-grow hvr-icon-pulse">
+                                            <span style="float: left;">{{ skill.name }}</span>
+                                            <span style="float: right;">
+                                            {% case skill.domine %}
+                                                {% when 1 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 2 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 3 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 4 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                {% when 5 %}
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                    <i class="fa fa-star hvr-icon"></i>
+                                                {% else %}
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>
+                                                    <i class="fa fa-star-o hvr-icon"></i>                                                
+                                            {% endcase %}
+                                            </span>
+                                        </li>
+                                {% endfor %} 
+                            </ul>
+                        </div>
+                        {% assign inicio = inicio | plus: limite %}
+                    {% endfor %} 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+        <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li>
@@ -76,5 +280,4 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
+    -->

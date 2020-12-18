@@ -1,64 +1,169 @@
 url: https://sirmario97.github.io.
-baseurl: /
+baseurl:
 
 # Site settings
 title: sir
 email: sir_mario97@hotmail.com
-description: "Hello world, this is my personal page. On this I will share a lot of things like my experience, knowledge, works, hobbies, objectives an more."
+description: "Hello world, this is my personal page. On this, I will share a lot of things like my experience, knowledge, works, hobbies, objectives and more."
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Mario Alberto Muro Barraza
   pic: 1
-  position: Lead Designer
+  position: Software Engineer
   social:
-    - title: twitter
-      url: #
     - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
+      url: https://www.facebook.com/marioalberto.murobarraza
     - title: linkedin
-      url: #
+      url: https://www.linkedin.com/in/mario-alberto-muro-barraza-61683b149/
+    - title: soundcloud
+      url: https://soundcloud.com/dj-ajom
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+
+# Idiomas
+languages:
+- name: Spanish (Mother tongue)
+  domine: 5
+
+- name: English (B1)
+  domine: 3
+
+
+# Herramientas
+tools:
+- name: Windows (10+ years)
+  domine: 5
+
+- name: Linux (4+ years)
+  domine: 4
+
+- name: MS OfHce Suite (10+ years)
+  domine: 5
+
+- name: Git (3 years)
+  domine: 3
+
+- name: NetBeans (2 years)
+  domine: 3
+
+- name: Eclipse (2 years)
+  domine: 3
+
+- name: Sublime Text (2 years)
+  domine: 3
+
+- name: VS Code (3 years)
+  domine: 3
+
+- name: Oracle VM Virtual Box (3+ years)
+  domine: 4
+
+- name: MySQL Workbench (3+ years)
+  domine: 3
+
+
+# Abilidades y dominio : 1 malo, 5 excelente
+skills:
+- name: Java
+  domine: 3
+
+- name: Python
+  domine: 3
+
+- name: Django
+  domine: 3
+
+- name: Vaadin
+  domine: 3
+
+- name: Java Spring
+  domine: 2
+
+- name: Fluter
+  domine: 2
+
+- name: MySQL
+  domine: 3
+
+- name: Oracle
+  domine: 3
+
+- name: SQLite
+  domine: 2
+
+- name: Firebase
+  domine: 2
+
+- name: OOP
+  domine: 3
+
+- name: MVC pattern
+  domine: 3
+
+- name: UML
+  domine: 3
+
+- name: SCRUM
+  domine: 2
+
+- name: PSP
+  domine: 2
+
+- name: TSP
+  domine: 2
+
+- name: AJAX
+  domine: 2
+
+- name: JavaScript
+  domine: 2
+    
+- name: JQuery
+  domine: 2
+
+- name: HTML5
+  domine: 2
+
+- name: CSS
+  domine: 2
+    
+- name: JSON
+  domine: 2
+    
+- name: Functional testing
+  domine: 2
+
+- name: Artificial intelligence
+  domine: 2
+
+- name: Ciber-security
+  domine: 2
+
+- name: C#
+  domine: 2
+    
+- name: C, C++
+  domine: 1
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
   - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
+    url: https://www.facebook.com/marioalberto.murobarraza
+  - title: linkedin
+    url: https://www.linkedin.com/in/mario-alberto-muro-barraza-61683b149/
   - title: github
-    url: http://github.com/jekyll
+    url: https://github.com/sirMario97
+  - title: gitlab
+    url: https://gitlab.com/sir_mario97
+#http://github.com/jekyll pagina de jekyll
+#http://www.pascalvangemert.nl/ página estructura referencia
+#
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: Zacatecas, Zacatecas
+  - line: México
 
 # Build settings
 markdown: kramdown

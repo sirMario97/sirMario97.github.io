@@ -3,18 +3,88 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Profile</h2>
+                    <h3 class="section-subheading text-muted">
+                        <!--Una vida sin explorar no merece la pena ser vivida”-->
+                        <p>"The unexamined life is not worth living"</p>
+                        <p>- Socrates.</p>
+                    </h3>
                 </div>
             </div>
-            <div class="row text-center">
+            <hr>
+            <div class="row">
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">About me</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    I am a passionate developer that loves his career and the whole software ambit. With a
+                                    big sense of responsibility dedication and commitment whit himself and the
+                                    community. I am a person that loves challenges, structure and order and 
+                                    I also stand for quality and optimization.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {% for member in site.people %}
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <img src="img/me/{{ member.pic }}.jpg" class="img-responsive img-circle shake-slow" alt="">
+                                <h4>{{ member.name }}</h4>
+                                <p class="text-muted">{{ member.position }}</p>
+                                <ul class="list-inline social-buttons">
+                                    {% for network in member.social %}
+                                    <li>
+                                        <a href="{{ network.url }}">
+                                            <i class="fa fa-{{ network.title }}"></i>
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <div class="col-md-4">
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="subheading">Details</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p>
+                                    <strong>Age:</strong>
+                                    <br>
+                                    23 years
+                                    <br>
+                                    <strong>Location:</strong>
+                                    <br>
+                                    Zacatecas, Zacatecas, México	
+                                </p>	
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">For more details about me (like hobbies, interests etc.) ckick here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--
+<div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <p class="text-muted">prueba</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -33,5 +103,4 @@
                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                 </div>
             </div>
-        </div>
-    </section>
+-->
