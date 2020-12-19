@@ -1,15 +1,17 @@
 ---
-title: Escape
-subtitle: Website Design
+title: Factoría POA
+subtitle: Website Development
 layout: default
 modal-id: 2
-date: 2014-07-17
-img: escape.png
-thumbnail: escape-thumbnail.png
+date: 2019-08-19
+img: factoriapoa_grande.png
+thumbnail: factoriapoa_chico.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
+project-date: In procedings
+client: Factoría - Secretaría de Economía Zacatecas
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+technologies: Python, Django, HTML, CSS, Java Script, JQuery, Linux, MySQL.
+description: Web application to manage and obtain critical information of all proyects, componentes and activities planed to the hole year, it also allows to track budget.
+link: https://ingsoftware2.uaz.edu.mx/factoria/usuarios/login
 
 ---

@@ -1,0 +1,16 @@
+---
+title: Umberlla
+subtitle: Web Application
+layout: default
+modal-id: 5
+date: 2019-12-01
+img: umbrella_grande.png
+thumbnail: umbrella_chico.png
+alt: image-alt
+project-date: December 2019
+client: Universidad Autónoma de Zacatecas - Ingeniería de Software
+category: Web application
+technologies: Java, Java Spring, Oracle DB, HTML, AJAX, JQuery, Java Script.
+description: This project consisted of developing a system to manage teachers' classes through a web platform to upload homeworks, classifications and student attendance record.
+link:
+---

@@ -1,15 +1,17 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: URideMe
+subtitle: Android Application
 layout: default
 modal-id: 1
-date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
+date: 2019-11-23
+img: urideme_grande.png
+thumbnail: urideme_chico.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
+project-date: November 2019
+client: Play Store
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+technologies: Android, Flutter, Firebase, Java.
+description: Mobile application to publish trips and ask for a ride. I was involved in all phases of the proyect.
+link: https://play.google.com/store/apps/details?id=mx.inventors.urideme.urideme&hl=en
 
 ---

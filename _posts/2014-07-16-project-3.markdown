@@ -1,15 +1,17 @@
 ---
-title: Golden
-subtitle: Website Design
+title: Lilith
+subtitle: Videogame
 layout: default
 modal-id: 3
-date: 2014-07-16
-img: golden.png
-thumbnail: golden-thumbnail.png
+date: 2020-02-15
+img: lilith_grande.png
+thumbnail: lilith_chico.png
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
+project-date: May 2020
+client: No-Client
 category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+technologies: RPGMaker, Java Script, HTML, CSS, JQuery.
+description: RPG game for web platforms.
+link: https://github.com/sirMario97/Lilith
 
 ---

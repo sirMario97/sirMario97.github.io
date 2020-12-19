@@ -146,6 +146,8 @@ skills:
 - name: C, C++
   domine: 1
 
+
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: facebook
@@ -154,7 +156,7 @@ social:
     url: https://www.linkedin.com/in/mario-alberto-muro-barraza-61683b149/
   - title: github
     url: https://github.com/sirMario97
-  - title: gitlab
+  - title: git
     url: https://gitlab.com/sir_mario97
 #http://github.com/jekyll pagina de jekyll
 #http://www.pascalvangemert.nl/ página estructura referencia

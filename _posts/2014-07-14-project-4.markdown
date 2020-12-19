@@ -1,0 +1,16 @@
+---
+title: Firearms detection
+subtitle: Descktop Application
+layout: default
+modal-id: 4
+date: 2020-01-01
+img: armed_rob_detec_grande.png
+thumbnail: armed_rob_detec_chico.png
+alt: image-alt
+project-date: In procedings
+client: No Client
+category: Descktop application
+technologies: Python, Java Script, Linux, OpenCV, CUDA, Darknet, TensorFlow, Pytorch.
+description: This personal project consist on create an artificial intelligent system able to detect when a robbery is being commited inside a sale estblishment. This is carried out by using Coputer Vision techniques and algorithms like Convolutional Neural Networks, to deteck weapons presence in the frames of the video surveillance.
+link:
+---
