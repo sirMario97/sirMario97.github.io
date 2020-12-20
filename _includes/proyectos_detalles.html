@@ -20,7 +20,11 @@
                                 <li class="hvr-bounce-in">
                                     Client:
                                     <strong style="color: #fe8903;">
-                                        {{ post.client }}
+                                        {% if post.client %}
+                                            {{ post.client }}
+                                        {% else %}
+                                            No Client
+                                        {% endif %}   
                                     </strong>
                                 </li>
                                 <li class="hvr-bounce-in">
@@ -45,13 +49,12 @@
                                     Link:
                                     <strong style="color: #fe8903;">
                                         {% if post.link %}
-                                            <a href="{{ post.link }}" style="color: #fe8903;">
+                                            <a herf="{{ post.link }}" target="_blank">
                                                 {{ post.link }}
                                             </a>
                                         {% else %}
                                             Not Aviable
-                                        {% endif %}
-                                        
+                                        {% endif %}                                        
                                     </strong>
                                 </li>
                             </ul>
