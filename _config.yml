@@ -23,7 +23,7 @@ people:
 
 # Idiomas
 languages:
-- name: Spanish (Mother tongue)
+- name: Spanish (Native Speaker)
   domine: 5
 
 - name: English (B1)
@@ -38,7 +38,7 @@ tools:
 - name: Linux (4+ years)
   domine: 4
 
-- name: MS OfHce Suite (10+ years)
+- name: MS Office Suite (10+ years)
   domine: 5
 
 - name: Git (3 years)
