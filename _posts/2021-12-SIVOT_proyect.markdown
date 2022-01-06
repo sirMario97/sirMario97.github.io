@@ -1,0 +1,17 @@
+---
+title: SIVOT
+subtitle: Django App
+layout: default
+modal-id: 6
+date: 2021-12-07
+img: sivot.png
+thumbnail: sivot_chico.png
+alt: image-alt
+project-date: December 2021
+client: IZAI
+category: Web Development
+technologies: Python, Django, MySQL, HTML, CSS, JavaScript.
+description: Web application to validate and qualify public information form governmentalorganizations and institutes.
+link: http://143.110.147.153
+
+---
