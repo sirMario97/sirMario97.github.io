@@ -8,7 +8,7 @@ img: sivot.png
 thumbnail: sivot_chico.png
 alt: image-alt
 project-date: December 2021
-client: IZAI
+client: IZAI, IDAIP, COTAI, ITAIBC
 category: Web Development
 technologies: Python, Django, MySQL, HTML, CSS, JavaScript.
 description: Web application to validate and qualify public information form governmentalorganizations and institutes.
