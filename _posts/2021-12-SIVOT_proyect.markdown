@@ -12,6 +12,6 @@ client: IZAI
 category: Web Development
 technologies: Python, Django, MySQL, HTML, CSS, JavaScript.
 description: Web application to validate and qualify public information form governmentalorganizations and institutes.
-link: http://143.110.147.153
+link: https://sivot.izai.org.mx
 
 ---
