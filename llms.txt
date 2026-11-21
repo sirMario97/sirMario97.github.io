@@ -1,0 +1,32 @@
+---
+layout: null
+---
+{%- assign p = site.data.profile -%}
+{%- assign year = site.time | date: "%Y" -%}
+# {{ p.name }}
+
+> {{ p.full_name }} is a software engineer from Mexico. In his own words: "{{ p.summary.en }}"
+
+Facts for screening:
+
+- Current role: {{ site.data.experience[0].role.en }} at {{ site.data.experience[0].org }}, since {{ site.data.experience[0].start }}
+- Career path: {% for s in p.path.stages %}{{ s.name.en }} ({{ s.year }}){% unless forloop.last %}, {% endunless %}{% endfor %}
+- Building software since 2019 ({{ year | minus: 2019 }} years) and leading teams since 2021 ({{ year | minus: 2021 }} years)
+- Country: Mexico
+- Languages: {% for l in p.languages %}{{ l.name.en }} ({{ l.level.en }}){% unless forloop.last %}, {% endunless %}{% endfor %}
+- Main stack today: {{ site.data.stack[0].tools | join: ", " }}
+- Contact: {{ p.email }}
+
+Dates use the YYYY-MM format. The pages below are generated from the same data, so they agree with each other.
+
+## Profile
+
+- [Full profile in Markdown]({{ site.url }}/llms-full.txt): every role with dates and achievements, projects, stack and education
+- [Structured profile]({{ site.url }}/profile.json): the same data in the JSON Resume schema
+- [Web page]({{ site.url }}/): the page for people, in English and Spanish
+
+## Links
+
+{% for l in p.links -%}
+- [{{ l.name }}]({{ l.url }})
+{% endfor %}

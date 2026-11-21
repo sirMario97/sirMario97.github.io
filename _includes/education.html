@@ -1,0 +1,30 @@
+{%- assign e = site.data.education -%}
+{%- assign p = site.data.profile -%}
+<section id="education">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2><span lang="en">Education and recognition</span><span lang="es">Formación y reconocimientos</span></h2>
+    </header>
+    <div class="two">
+      <ul class="rows">
+        <li>
+          <b><span lang="en">{{ e.degree.title.en }}</span><span lang="es">{{ e.degree.title.es }}</span></b>
+          <span class="d">{{ e.degree.school }}, <span lang="en">{{ e.degree.start }} to {{ e.degree.end }}</span><span lang="es">de {{ e.degree.start }} a {{ e.degree.end }}</span></span>
+          <span class="d"><span lang="en">{{ e.degree.note.en }}</span><span lang="es">{{ e.degree.note.es }}</span></span>
+        </li>
+        <li class="screen-only">
+          <b><span lang="en">Languages</span><span lang="es">Idiomas</span></b>
+          <span class="d">{% for l in p.languages %}<span lang="en">{{ l.name.en }} ({{ l.level.en }})</span><span lang="es">{{ l.name.es }} ({{ l.level.es }})</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
+        </li>
+      </ul>
+      <ul class="rows">
+        {%- for r in e.recognition %}
+        <li>
+          <b><span lang="en">{{ r.title.en }}</span><span lang="es">{{ r.title.es }}</span></b>
+          <span class="d"><span lang="en">{{ r.detail.en }}</span><span lang="es">{{ r.detail.es }}</span></span>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

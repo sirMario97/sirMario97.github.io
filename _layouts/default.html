@@ -1,21 +1,12 @@
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-
-    <body id="page-top" class="index">
-
-    {% include header.html %}
-    {% include perfil.html %}
-    {% include experiencias.html %}
-    {% include abilidades.html %}
-    {% include proyectos.html %}
-    <!--{% include clientes.html %}-->
-    {% include contact.html %}
-    {% include footer.html %}
-    {% include proyectos_detalles.html %}
-    {% include js.html %}
-
-    </body>
+<html lang="en" data-lang="en">
+{% include head.html %}
+<body>
+{% include header.html %}
+<main id="top">
+{{ content }}
+</main>
+{% include footer.html %}
+<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+</body>
 </html>

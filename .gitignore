@@ -10,6 +10,9 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
+#  Claude metadata files
+.claude
+
 # Windows Installer files
 *.cab
 *.msi
@@ -35,3 +38,6 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+# Sitio anterior, se conserva solo como respaldo local
+_legacy/

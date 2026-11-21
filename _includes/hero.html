@@ -1,0 +1,73 @@
+{%- assign p = site.data.profile -%}
+{%- assign year = site.time | date: "%Y" -%}
+<section class="hero" aria-labelledby="name">
+  <div class="wrap">
+    <div class="hero-main">
+      <p class="label status"><span class="dot live" aria-hidden="true"></span><span lang="en">{{ p.status.en }}</span><span lang="es">{{ p.status.es }}</span></p>
+      <h1 id="name" class="matrix">{{ p.name | replace: " ", " <br>" }}</h1>
+      <p class="role"><span lang="en">{{ p.headline.en }}</span><span lang="es">{{ p.headline.es }}</span></p>
+      <p class="lede" lang="en">{{ p.summary.en }}</p>
+      <p class="lede" lang="es">{{ p.summary.es }}</p>
+      <p class="reach">
+        <a class="mail" href="mailto:{{ p.email }}">{{ p.email }}</a>
+        {%- for l in p.links %}
+        <span class="print-only">{{ l.url | remove: "https://" | remove: "www." }}</span>
+        {%- endfor %}
+      </p>
+      <div class="actions">
+        {%- for l in p.links limit: 2 %}
+        <a class="btn" href="{{ l.url }}" rel="me noopener">{{ l.name }}</a>
+        {%- endfor %}
+        <button class="btn" type="button" id="print-cv"><span lang="en">Save CV as PDF</span><span lang="es">Guardar CV en PDF</span></button>
+      </div>
+    </div>
+
+    <div class="widgets">
+      {%- if p.photo %}
+      <figure class="widget photo">
+        <img src="{{ p.photo | relative_url }}" alt="{{ p.name }}" width="225" height="225">
+      </figure>
+      {%- endif %}
+      {%- for m in p.metrics %}
+      {%- assign n = year | minus: m.since %}
+      <div class="widget metric">
+        <p class="num matrix">{% if n < 10 %}0{% endif %}{{ n }}</p>
+        <div class="viz" aria-hidden="true">{% for i in (1..n) %}<i></i>{% endfor %}</div>
+        <p class="label"><span lang="en">{{ m.label.en }}</span><span lang="es">{{ m.label.es }}</span></p>
+        <p class="note"><span lang="en">{{ m.note.en }}</span><span lang="es">{{ m.note.es }}</span></p>
+      </div>
+      {%- endfor %}
+
+      <div class="widget wide path">
+        <p class="label"><span lang="en">{{ p.path.label.en }}</span><span lang="es">{{ p.path.label.es }}</span></p>
+        <ol>
+          {%- for s in p.path.stages %}
+          <li{% if s.current %} class="now"{% endif %}>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="yr">{{ s.year }}</span>
+            <span class="nm"><span lang="en">{{ s.name.en }}</span><span lang="es">{{ s.name.es }}</span></span>
+          </li>
+          {%- endfor %}
+        </ol>
+      </div>
+
+      <div class="widget wide scope">
+        <p class="label"><span lang="en">{{ p.scope.label.en }}</span><span lang="es">{{ p.scope.label.es }}</span></p>
+        <ul>
+          {%- for it in p.scope.items %}
+          <li><span class="num matrix">{% if it.value < 10 %}0{% endif %}{{ it.value }}</span><span class="tx"><span lang="en">{{ it.text.en }}</span><span lang="es">{{ it.text.es }}</span></span></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <dl class="facts">
+      {%- for f in p.facts %}
+      <div>
+        <dt class="label"><span lang="en">{{ f.label.en }}</span><span lang="es">{{ f.label.es }}</span></dt>
+        <dd><span lang="en">{{ f.value.en }}</span><span lang="es">{{ f.value.es }}</span></dd>
+      </div>
+      {%- endfor %}
+    </dl>
+  </div>
+</section>

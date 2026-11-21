@@ -1,0 +1,93 @@
+name: Mario Muro
+full_name: Mario Alberto Muro Barraza
+role: Delivery & Success Manager
+company: ArkonData
+email: sir_mario97@hotmail.com
+# Para volver a mostrar la foto, quita el signo de numeral de la línea siguiente.
+# photo: /img/me/1.jpg
+country: México
+country_code: MX
+links:
+  - name: LinkedIn
+    user: mario-alberto-muro-barraza-61683b149
+    url: https://www.linkedin.com/in/mario-alberto-muro-barraza-61683b149/
+  - name: GitHub
+    user: sirMario97
+    url: https://github.com/sirMario97
+  - name: GitLab
+    user: sir_mario97
+    url: https://gitlab.com/sir_mario97
+status:
+  en: Today, Delivery & Success Manager at ArkonData
+  es: Hoy, Delivery & Success Manager en ArkonData
+headline:
+  en: Software engineer with a path through backend, data, technical leadership and delivery
+  es: Ingeniero de software con trayectoria en backend, datos, liderazgo técnico y delivery
+summary:
+  en: I currently run delivery of the data lake that brings data from Grupo Bimbo's multiple cloud storages into Azure Databricks. I have long experience leading teams that mix specialties, from front end, QA and back end to analysts, data engineers and architects. I come from backend work, where I programmed in Scala and Python.
+  es: Actualmente dirijo la entrega del data lake que lleva los datos de múltiples cloud storages de Grupo Bimbo a Azure Databricks. Tengo amplia experiencia liderando equipos con miembros de múltiples especializaciones, desde front, QA y back hasta analistas, ingenieros de datos y arquitectos. Vengo del backend, donde programé en Scala y Python.
+facts:
+  - label: {en: Current role, es: Puesto actual}
+    value: {en: "Delivery & Success Manager, ArkonData", es: "Delivery & Success Manager, ArkonData"}
+  - label: {en: Country, es: País}
+    value: {en: Mexico, es: México}
+  - label: {en: Languages, es: Idiomas}
+    value: {en: "Spanish (native), English (B2)", es: "Español (nativo), inglés (B2)"}
+  - label: {en: Degree, es: Formación}
+    value: {en: "Software Engineering, UAZ", es: "Ingeniería de Software, UAZ"}
+# Los años se calculan solos a partir de "since".
+metrics:
+  - since: 2019
+    label: {en: years building software, es: años construyendo software}
+    note: {en: since 2019, es: desde 2019}
+  - since: 2021
+    label: {en: years leading teams, es: años liderando equipos}
+    note: {en: since 2021, es: desde 2021}
+path:
+  label: {en: Career path, es: Trayectoria}
+  stages:
+    - year: 2019
+      name: {en: Backend, es: Backend}
+    - year: 2021
+      name: {en: Technical lead, es: Liderazgo técnico}
+    - year: 2025
+      name: {en: Data engineering, es: Ingeniería de datos}
+    - year: 2026
+      current: true
+      name: {en: Delivery, es: Delivery}
+scope:
+  label: {en: Reach of what I have delivered, es: Alcance de lo que he entregado}
+  items:
+    - value: 4
+      text: {en: "Mexican states use SIVOT, the system I built at IZAI", es: "estados de México usan SIVOT, el sistema que construí en el IZAI"}
+    - value: 5
+      text: {en: "world regions are covered by the data lake I deliver today", es: "regiones del mundo cubre el data lake que entrego hoy"}
+languages:
+  - name: {en: Spanish, es: Español}
+    level: {en: native, es: nativo}
+  - name: {en: English, es: Inglés}
+    level: {en: B2, es: B2}
+principles:
+  - area: {en: Backend, es: Backend}
+    title: {en: Tests ship with the code, es: Las pruebas salen con el código}
+    text:
+      en: On Factoría POA we worked test-first and passed 90% coverage. At ArkonData every Scala or Python service went out with unit and integration tests and was deployed through continuous integration.
+      es: En Factoría POA trabajamos con TDD y pasamos de 90 % de cobertura. En ArkonData cada servicio en Scala o Python salía con pruebas unitarias y de integración, y se desplegaba por integración continua.
+  - area: {en: Data engineering, es: Ingeniería de datos}
+    title: {en: Reconcile before release, es: Conciliar antes de liberar}
+    text:
+      en: A data model is accepted when its row counts and totals match the source over a closed window. Column names are checked in the catalog before anyone uses them.
+      es: Un modelo de datos se acepta cuando sus conteos y totales coinciden con la fuente sobre una ventana cerrada. Los nombres de columnas se revisan en el catálogo antes de usarlos.
+  - area: {en: Technical lead, es: Liderazgo técnico}
+    title: {en: Realistic workload, es: Carga de trabajo realista}
+    text:
+      en: Each person carries two deliverables at most and every activity has a backup. Once a week the team shows what it built, and the documentation is versioned with the code.
+      es: Cada persona lleva dos entregables como máximo y cada actividad tiene un respaldo. Una vez por semana el equipo muestra lo que construyó, y la documentación se versiona con el código.
+  - area: {en: Delivery, es: Delivery}
+    title: {en: Every change has a way back, es: Todo cambio tiene regreso}
+    text:
+      en: Production changes go through the client's review boards with a rollback plan already written. Every week I report releases and incidents to operations and service leadership.
+      es: Los cambios a producción pasan por los comités del cliente con el plan de rollback ya escrito. Cada semana reporto liberaciones e incidentes a la dirección de operaciones y servicio.
+quote:
+  text: The unexamined life is not worth living.
+  author: Socrates

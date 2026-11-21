@@ -1,0 +1,46 @@
+{%- assign jobs = site.data.experience -%}
+{%- assign n = jobs | size -%}
+<section id="experience">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2><span lang="en">Experience</span><span lang="es">Experiencia</span></h2>
+      <p class="label count">({% if n < 10 %}0{% endif %}{{ n }})</p>
+    </header>
+    <ol class="jobs">
+      {%- for j in jobs %}
+      <li class="job{% if j.current %} now{% endif %}">
+        <div class="when">
+          <p class="label"><span lang="en">{{ j.period.en }}</span><span lang="es">{{ j.period.es }}</span></p>
+          {%- if j.current %}
+          <p class="tag"><span lang="en">Current</span><span lang="es">Actual</span></p>
+          {%- endif %}
+        </div>
+        <div class="what">
+          <h3><span lang="en">{{ j.role.en }}</span><span lang="es">{{ j.role.es }}</span></h3>
+          <p class="org">{{ j.org }}{% if j.client %}<span lang="en">, for {{ j.client }}</span><span lang="es">, para {{ j.client }}</span>{% endif %}</p>
+          {%- if j.org_long %}
+          <p class="org long">{{ j.org_long }}</p>
+          {%- endif %}
+          <p class="sum" lang="en">{{ j.summary.en }}</p>
+          <p class="sum" lang="es">{{ j.summary.es }}</p>
+          {%- assign hn = j.highlights | size -%}
+          {%- if hn > 0 %}
+          <ul class="pts">
+            {%- for h in j.highlights %}
+            <li><span lang="en">{{ h.en }}</span><span lang="es">{{ h.es }}</span></li>
+            {%- endfor %}
+          </ul>
+          {%- endif %}
+          <ul class="chips">{% for t in j.tech %}<li>{{ t }}</li>{% endfor %}</ul>
+        </div>
+        {%- if j.stat %}
+        <p class="stat">
+          <span class="fig">{% if j.stat.pre %}<span class="unit">{{ j.stat.pre }}</span>{% endif %}<span class="num matrix">{{ j.stat.num }}</span>{% if j.stat.unit %}<span class="unit">{{ j.stat.unit }}</span>{% endif %}</span>
+          <span class="label"><span lang="en">{{ j.stat.label.en }}</span><span lang="es">{{ j.stat.label.es }}</span></span>
+        </p>
+        {%- endif %}
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+degree:
+  title: {en: B.Eng. in Software Engineering, es: Ingeniería de Software}
+  school: Universidad Autónoma de Zacatecas
+  start: "2016"
+  end: "2021"
+  note: {en: "GPA 3.8 of 4.0, with honorable mention", es: "Promedio de 3.8 sobre 4.0, con mención honorífica"}
+recognition:
+  - title: {en: SIVOT adopted by agreement in three more states, es: SIVOT adoptado por convenio en tres estados más}
+    detail: {en: "IZAI, 2021 to 2023", es: "IZAI, de 2021 a 2023"}
+  - title: {en: "ICPC regional contests, Mexico and Central America", es: "Concursos regionales ICPC, México y Centroamérica"}
+    detail: {en: "2017 and 2018", es: "2017 y 2018"}
+  - title: {en: "Peer mentor, Software Engineering program", es: "Mentor de pares, programa de Ingeniería de Software"}
+    detail: {en: "UAZ, 2018", es: "UAZ, 2018"}

@@ -1,0 +1,20 @@
+{%- assign items = site.data.profile.principles -%}
+{%- assign n = items | size -%}
+<section id="approach">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2><span lang="en">How I work</span><span lang="es">Cómo trabajo</span></h2>
+      <p class="label count">({% if n < 10 %}0{% endif %}{{ n }})</p>
+    </header>
+    <ul class="principles">
+      {%- for it in items %}
+      <li>
+        <p class="label area"><span lang="en">{{ it.area.en }}</span><span lang="es">{{ it.area.es }}</span></p>
+        <h3><span lang="en">{{ it.title.en }}</span><span lang="es">{{ it.title.es }}</span></h3>
+        <p lang="en">{{ it.text.en }}</p>
+        <p lang="es">{{ it.text.es }}</p>
+      </li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
