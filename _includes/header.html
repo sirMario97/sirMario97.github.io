@@ -1,58 +1,26 @@
-<!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">{{site.title}}</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Profile</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Experiences</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">Abilities</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>{{ site.data.profile.name }}</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#experience"><span lang="en">Experience</span><span lang="es">Experiencia</span></a></li>
+        <li><a href="#projects"><span lang="en">Projects</span><span lang="es">Proyectos</span></a></li>
+        <li><a href="#stack">Stack</a></li>
+        <li><a href="#education"><span lang="en">Education</span><span lang="es">Formación</span></a></li>
+        <li><a href="#contact"><span lang="en">Contact</span><span lang="es">Contacto</span></a></li>
+      </ul>
     </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Welcome To My Interactive Resume!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl hvr-pulse-shrink">Tell Me More</a>
-            </div>
-        </div>
-    </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
-
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Language / Idioma">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <button class="toggle" id="theme-switch" type="button" role="switch" aria-checked="false">
+        <span class="sr"><span lang="en">Dark theme</span><span lang="es">Tema oscuro</span></span>
+        <span class="knob" aria-hidden="true"></span>
+        <svg class="ico sun" viewBox="-0.5 -0.5 7 7" aria-hidden="true"><circle cx="3" cy="0" r="0.42"/><circle cx="1" cy="1" r="0.42"/><circle cx="5" cy="1" r="0.42"/><circle cx="2" cy="2" r="0.42"/><circle cx="3" cy="2" r="0.42"/><circle cx="4" cy="2" r="0.42"/><circle cx="0" cy="3" r="0.42"/><circle cx="2" cy="3" r="0.42"/><circle cx="3" cy="3" r="0.42"/><circle cx="4" cy="3" r="0.42"/><circle cx="6" cy="3" r="0.42"/><circle cx="2" cy="4" r="0.42"/><circle cx="3" cy="4" r="0.42"/><circle cx="4" cy="4" r="0.42"/><circle cx="1" cy="5" r="0.42"/><circle cx="5" cy="5" r="0.42"/><circle cx="3" cy="6" r="0.42"/></svg>
+        <svg class="ico moon" viewBox="-0.5 -0.5 7 7" aria-hidden="true"><circle cx="2" cy="0" r="0.42"/><circle cx="3" cy="0" r="0.42"/><circle cx="4" cy="0" r="0.42"/><circle cx="1" cy="1" r="0.42"/><circle cx="2" cy="1" r="0.42"/><circle cx="3" cy="1" r="0.42"/><circle cx="0" cy="2" r="0.42"/><circle cx="1" cy="2" r="0.42"/><circle cx="2" cy="2" r="0.42"/><circle cx="0" cy="3" r="0.42"/><circle cx="1" cy="3" r="0.42"/><circle cx="2" cy="3" r="0.42"/><circle cx="0" cy="4" r="0.42"/><circle cx="1" cy="4" r="0.42"/><circle cx="2" cy="4" r="0.42"/><circle cx="6" cy="4" r="0.42"/><circle cx="1" cy="5" r="0.42"/><circle cx="2" cy="5" r="0.42"/><circle cx="3" cy="5" r="0.42"/><circle cx="4" cy="5" r="0.42"/><circle cx="5" cy="5" r="0.42"/><circle cx="2" cy="6" r="0.42"/><circle cx="3" cy="6" r="0.42"/><circle cx="4" cy="6" r="0.42"/></svg>
+      </button>
+    </div>
+  </div>
+</header>

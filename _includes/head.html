@@ -1,32 +1,53 @@
+{%- assign p = site.data.profile -%}
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-
-    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="{{ "/style.css" | prepend: site.baseurl }}">
-    <!--https://elrumordelaluz.github.io/csshake/#flexibility CHECAR LOS TEMAS DE MOVIMIENTO-->
-    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
-    <!--https://ianlunn.github.io/Hover/ OTROS TEMAS MÁS DE MOVIMIENTO-->
-    <link href="css/hover.css" rel="stylesheet" media="all">
-    <!--https://shopify.github.io/liquid/ Para el uso de las etiquetas funcionales-->
-
-    <!-- Custom Fonts -->
-    <link rel="stylesheet" href="{{ "/css/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ p.name }}, {{ site.tagline }}</title>
+<meta name="description" content="{{ site.description }}">
+<meta name="author" content="{{ p.full_name }}">
+<link rel="canonical" href="{{ site.url }}/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="{{ p.name }}, {{ site.tagline }}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:url" content="{{ site.url }}/">
+{%- if p.photo %}
+<meta property="og:image" content="{{ site.url }}{{ p.photo }}">
+{%- endif %}
+<link rel="alternate" type="text/plain" title="llms.txt" href="{{ '/llms.txt' | relative_url }}">
+<link rel="alternate" type="text/plain" title="Full profile in Markdown" href="{{ '/llms-full.txt' | relative_url }}">
+<link rel="alternate" type="application/json" title="JSON Resume" href="{{ '/profile.json' | relative_url }}">
+<link rel="preload" href="{{ '/assets/fonts/doto.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ '/assets/fonts/geist.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<script>
+(function () {
+  var r = document.documentElement, l = null, t = null;
+  try { l = localStorage.getItem("mm-lang"); t = localStorage.getItem("mm-theme"); } catch (e) {}
+  if (l !== "es" && l !== "en") { l = "en"; }
+  r.setAttribute("data-lang", l); r.setAttribute("lang", l);
+  if (t === "dark" || t === "light") { r.setAttribute("data-theme", t); }
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+  "mainEntity": {
+    "@type": "Person",
+    "name": {{ p.full_name | jsonify }},
+    "alternateName": {{ p.name | jsonify }},
+    "jobTitle": {{ p.role | jsonify }},
+    "description": {{ p.summary.en | jsonify }},
+    "url": "{{ site.url }}/",
+    "email": "mailto:{{ p.email }}",
+    "worksFor": { "@type": "Organization", "name": {{ p.company | jsonify }} },
+    "address": { "@type": "PostalAddress", "addressCountry": {{ p.country_code | jsonify }} },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": {{ site.data.education.degree.school | jsonify }} },
+    "knowsLanguage": ["es", "en"],
+    "knowsAbout": ["Backend engineering", "Data engineering", "Technical leadership", "Delivery management", {% for t in site.data.stack[0].tools %}{{ t | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
+    "sameAs": [{% for l in p.links %}{{ l.url | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}]
+  }
+}
+</script>
 </head>

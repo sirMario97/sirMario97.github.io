@@ -1,0 +1,27 @@
+{%- assign items = site.data.projects -%}
+{%- assign n = items | size -%}
+<section id="projects">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2><span lang="en">Projects</span><span lang="es">Proyectos</span></h2>
+      <p class="label count">({% if n < 10 %}0{% endif %}{{ n }})</p>
+    </header>
+    <div class="cards">
+      {%- for it in items %}
+      <article class="card{% unless it.image %} plain{% endunless %}">
+        {%- if it.image %}
+        <div class="shot"><img src="{{ it.image | relative_url }}" alt="" loading="lazy"></div>
+        {%- endif %}
+        <div class="in">
+          <p class="label"><span lang="en">{{ it.kind.en }}</span><span lang="es">{{ it.kind.es }}</span>, {{ it.years }}</p>
+          <h3>{% if it.url %}<a href="{{ it.url }}" rel="noopener">{% endif %}<span lang="en">{{ it.name.en }}</span><span lang="es">{{ it.name.es }}</span>{% if it.url %}</a>{% endif %}</h3>
+          <p lang="en">{{ it.text.en }}</p>
+          <p lang="es">{{ it.text.es }}</p>
+          <p class="who"><span lang="en">{{ it.role.en }}</span><span lang="es">{{ it.role.es }}</span></p>
+          <ul class="chips">{% for t in it.tech %}<li>{{ t }}</li>{% endfor %}</ul>
+        </div>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>

@@ -1,26 +1,7 @@
-  <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        {% for network in site.social %}
-                        <li>
-                          <a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }}"></i></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="#0">Privacy Policy</a>
-                        </li>
-                        <li><a href="#0">Terms of Use</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+{%- assign p = site.data.profile -%}
+<footer>
+  <div class="wrap">
+    <span><q>{{ p.quote.text }}</q> {{ p.quote.author }}</span>
+    <span class="label">© {{ site.time | date: "%Y" }} {{ p.name }}</span>
+  </div>
+</footer>

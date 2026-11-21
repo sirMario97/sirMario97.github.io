@@ -1,0 +1,83 @@
+---
+layout: null
+---
+{%- assign p = site.data.profile -%}
+{%- assign e = site.data.education -%}
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": {{ p.full_name | jsonify }},
+    "label": {{ p.headline.en | jsonify }},
+    "email": {{ p.email | jsonify }},
+    "url": "{{ site.url }}/",
+    "summary": {{ p.summary.en | jsonify }},
+    "location": {
+      "countryCode": {{ p.country_code | jsonify }}
+    },
+    "profiles": [
+      {%- for l in p.links %}
+      { "network": {{ l.name | jsonify }}, "username": {{ l.user | jsonify }}, "url": {{ l.url | jsonify }} }{% unless forloop.last %},{% endunless %}
+      {%- endfor %}
+    ]
+  },
+  "work": [
+    {%- for j in site.data.experience %}
+    {
+      "name": {{ j.org | jsonify }},
+      "position": {{ j.role.en | jsonify }},
+      "startDate": {{ j.start | jsonify }},
+      {%- if j.end != "" %}
+      "endDate": {{ j.end | jsonify }},
+      {%- endif %}
+      "summary": {{ j.summary.en | jsonify }},
+      "highlights": [{% for h in j.highlights %}{{ h.en | jsonify }}{% unless forloop.last %}, {% endunless %}{% endfor %}],
+      "keywords": {{ j.tech | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "education": [
+    {
+      "institution": {{ e.degree.school | jsonify }},
+      "area": "Software Engineering",
+      "studyType": "Bachelor",
+      "startDate": {{ e.degree.start | jsonify }},
+      "endDate": {{ e.degree.end | jsonify }},
+      "score": "3.8/4.0"
+    }
+  ],
+  "awards": [
+    {%- for r in e.recognition %}
+    { "title": {{ r.title.en | jsonify }}, "summary": {{ r.detail.en | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "skills": [
+    {%- for g in site.data.stack %}
+    { "name": {{ g.name.en | jsonify }}, "keywords": {{ g.tools | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "languages": [
+    {%- for l in p.languages %}
+    { "language": {{ l.name.en | jsonify }}, "fluency": {{ l.level.en | jsonify }} }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "projects": [
+    {%- for it in site.data.projects %}
+    {
+      "name": {{ it.name.en | jsonify }},
+      "description": {{ it.text.en | jsonify }},
+      "startDate": {{ it.start | jsonify }},
+      "endDate": {{ it.end | jsonify }},
+      "roles": [{{ it.role.en | jsonify }}],
+      "type": {{ it.kind.en | jsonify }},
+      {%- if it.url %}
+      "url": {{ it.url | jsonify }},
+      {%- endif %}
+      "keywords": {{ it.tech | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ],
+  "meta": {
+    "canonical": "{{ site.url }}/profile.json",
+    "lastModified": "{{ site.time | date: '%Y-%m-%dT%H:%M:%S' }}"
+  }
+}

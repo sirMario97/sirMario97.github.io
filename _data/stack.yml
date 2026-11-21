@@ -1,0 +1,12 @@
+- name: {en: Daily, es: Uso diario}
+  period: "2025-2026"
+  tools: [Azure Databricks, Unity Catalog, Delta Lake, SQL, Spark SQL, Python, ADLS Gen2, Azure DevOps, ServiceNow, Oracle Cloud, Git, Linux]
+- name: {en: Earlier professional work, es: Trabajo profesional previo}
+  period: "2021-2025"
+  tools: [Scala, Java, Django, Kafka, gRPC, Protobuf, GraphQL, PostgreSQL, Neo4j, MySQL, Docker, Kubernetes, AWS, GitHub Actions, Argo]
+- name: {en: Research and early projects, es: Investigación y primeros proyectos}
+  period: "2019-2022"
+  tools: [YOLOv4, OpenCV, PyTorch, TensorFlow, Flutter, Firebase, Java Spring]
+- name: {en: Ways of working, es: Forma de trabajo}
+  period: ""
+  tools: [Scrum, TDD, Code review, Docs as code, Dimensional modeling, Change management]

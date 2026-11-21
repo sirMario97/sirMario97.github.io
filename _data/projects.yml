@@ -1,0 +1,65 @@
+- name: {en: SIVOT, es: SIVOT}
+  years: "2021-2023"
+  start: "2021"
+  end: "2023"
+  kind: {en: Government web system, es: Sistema web de gobierno}
+  text:
+    en: Validates and scores public information from government organizations. Four state transparency institutes use it.
+    es: Valida y califica información pública de organismos de gobierno. Lo usan cuatro institutos estatales de transparencia.
+  role: {en: Project lead and only backend developer, es: Líder del proyecto y único desarrollador backend}
+  tech: [Python, Django, MySQL]
+  image: /img/portfolio/sivot_chico.png
+- name: {en: Armed robbery detection, es: Detección de robos armados}
+  years: "2020-2022"
+  start: "2020"
+  end: "2022"
+  kind: {en: Personal research, es: Investigación personal}
+  text:
+    en: Detects firearms in store surveillance video with convolutional neural networks.
+    es: Detecta armas de fuego en video de vigilancia de comercios con redes neuronales convolucionales.
+  role: {en: All phases, es: Todas las fases}
+  tech: [Python, YOLOv4, Darknet, OpenCV]
+  image: /img/portfolio/armed_rob_detec_chico.png
+- name: {en: URideMe, es: URideMe}
+  years: "2019"
+  start: "2019"
+  end: "2019"
+  kind: {en: Mobile app, es: App móvil}
+  text:
+    en: Commission-free app to publish trips and ask for a ride in real time. A freelance team built it in two months, from requirements to the Play Store.
+    es: App sin comisiones para publicar viajes y pedir aventón en tiempo real. Un equipo freelance la construyó en dos meses, de los requerimientos a la Play Store.
+  role: {en: All phases, es: Todas las fases}
+  tech: [Flutter, Firebase, Android]
+  image: /img/portfolio/urideme_chico.png
+- name: {en: Factoría POA, es: Factoría POA}
+  years: "2019-2021"
+  start: "2019"
+  end: "2021"
+  kind: {en: Government web system, es: Sistema web de gobierno}
+  text:
+    en: Manages the projects, components and activities of the Annual Operating Plan and tracks their budget.
+    es: Gestiona los proyectos, componentes y actividades del Programa Operativo Anual y da seguimiento a su presupuesto.
+  role: {en: All phases in a team of five, es: Todas las fases en un equipo de cinco}
+  tech: [Python, Django, MySQL, TDD]
+  image: /img/portfolio/factoriapoa_chico.png
+- name: {en: Umbrella, es: Umbrella}
+  years: "2019"
+  start: "2019"
+  end: "2019"
+  kind: {en: Web application, es: Aplicación web}
+  text:
+    en: Class management for teachers, with homework, grades and attendance.
+    es: Gestión de clases para docentes, con tareas, calificaciones y asistencia.
+  role: {en: "Requirements, design and development", es: "Requerimientos, diseño y desarrollo"}
+  tech: [Java, Spring, Oracle DB]
+- name: {en: Lilith, es: Lilith}
+  years: "2020"
+  start: "2020"
+  end: "2020"
+  kind: {en: Web game, es: Videojuego web}
+  text:
+    en: An RPG game that runs in the browser.
+    es: Un videojuego RPG que corre en el navegador.
+  role: {en: Personal project, es: Proyecto personal}
+  tech: [JavaScript, HTML, CSS]
+  url: https://github.com/sirMario97/Lilith

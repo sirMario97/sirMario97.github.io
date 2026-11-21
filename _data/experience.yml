@@ -1,0 +1,185 @@
+- id: dsm
+  current: true
+  start: "2026-07"
+  end: ""
+  period:
+    en: Jul 2026 to now
+    es: Jul 2026 a hoy
+  role:
+    en: "Delivery & Success Manager"
+    es: "Delivery & Success Manager"
+  org: ArkonData
+  client: Grupo Bimbo
+  summary:
+    en: "I manage 4 global data projects that ArkonData builds for Grupo Bimbo and work directly with the company's stakeholders. The main one is a data lake that gathers data from several clouds and systems in Azure Databricks, with deployments that span 5 world regions. Other projects bring in data from companies such as Nielsen."
+    es: "Gestiono 4 proyectos globales de datos que ArkonData desarrolla para Grupo Bimbo y trato directamente con los stakeholders de la empresa. El principal es un data lake que concentra en Azure Databricks los datos de varias nubes y sistemas, con despliegues que abarcan 5 regiones del mundo. Otros proyectos integran datos de compañías como Nielsen."
+  stat:
+    num: "4"
+    label:
+      en: global projects with Grupo Bimbo stakeholders
+      es: proyectos globales con stakeholders de Grupo Bimbo
+  highlights:
+  - en: "Coordinate the ArkonData team with the vendors of the source systems, the provider that operates production and the client's data area."
+    es: "Coordino al equipo de ArkonData con los fabricantes de los sistemas fuente, el proveedor que opera producción y el área de datos del cliente."
+  - en: "Prepare the go-live documentation for each project, with operations manuals, the deployment plan, the architecture review and the support guide."
+    es: "Preparo la documentación de salida a producción de cada proyecto, con manuales de operación, plan de despliegue, revisión de arquitectura y guía de soporte."
+  - en: Carry out the team's performance and development reviews.
+    es: Hago las evaluaciones de desempeño y desarrollo del equipo.
+  tech:
+  - Azure Databricks
+  - Azure DevOps
+  - ServiceNow
+  - Scrum
+- id: tl-data
+  start: "2025-07"
+  end: "2026-07"
+  period:
+    en: Jul 2025 to Jul 2026
+    es: Jul 2025 a jul 2026
+  role:
+    en: "Tech Lead, Data Engineering"
+    es: Tech Lead de Ingeniería de Datos
+  org: ArkonData
+  client: Grupo Bimbo
+  summary:
+    en: I led the data engineering teams that build on Azure Databricks for Grupo Bimbo.
+    es: Lideré a los equipos de ingeniería de datos que construyen sobre Azure Databricks para Grupo Bimbo.
+  highlights:
+  - en: "Directed development of a lakehouse with landing, curated and semantic zones, deployed across 5 world regions."
+    es: "Dirigí el desarrollo de un lakehouse con zonas landing, curated y semantic, desplegado en 5 regiones del mundo."
+  - en: "Designed and built dimensional models in the gold and semantic layers, which are used globally for business intelligence."
+    es: "Diseñé y construí modelos dimensionales en las capas oro y semántica, que se usan a nivel global para inteligencia de negocio."
+  - en: "Took more than 4 global releases of Databricks projects to production. They use native Databricks technology, such as Liquid Clustering and declarative pipelines, that sped up how data is ingested and consumed worldwide."
+    es: "Llevé a producción más de 4 liberaciones globales de proyectos en Databricks. Usan tecnologías nativas de la plataforma, como Liquid Clustering y pipelines declarativos, que agilizaron la ingesta y el consumo de información a nivel global."
+  - en: "Optimized the data extractors, the ETL jobs in Databricks and the pipelines that build the gold layer. That lowered operating cost, data freshness time and report read time."
+    es: "Optimicé los extractores de información, los ETL en Databricks y los pipelines que construyen la capa oro. Con eso bajaron el costo de operación, el tiempo de frescura de los datos y el tiempo de lectura de los reportes."
+  tech:
+  - Azure Databricks
+  - Unity Catalog
+  - Delta Lake
+  - Spark SQL
+  - Python
+  - ADLS Gen2
+  - Oracle Cloud
+  stat:
+    pre: "<"
+    num: "1"
+    unit: h
+    label:
+      en: "Grupo Bimbo's month-end close today, down from a full day"
+      es: "tarda hoy el cierre de mes de Grupo Bimbo, que antes tomaba un día"
+- id: tl-backend
+  start: "2024-02"
+  end: "2025-07"
+  period:
+    en: Feb 2024 to Jul 2025
+    es: Feb 2024 a jul 2025
+  role:
+    en: "Tech Lead, Backend"
+    es: Tech Lead de Backend
+  org: ArkonData
+  summary:
+    en: "I led a feature team on ArkonData, a B2B data mining platform built on microservices."
+    es: "Lideré un equipo de desarrollo en ArkonData, una plataforma B2B de minería de datos construida sobre microservicios."
+  stat:
+    num: "13"
+    label:
+      en: engineers on the team
+      es: ingenieros en el equipo
+  highlights:
+  - en: "Ran cloud infrastructure on AWS and Azure with Docker, Kubernetes, GitHub Actions and Argo."
+    es: "Operé infraestructura en AWS y Azure con Docker, Kubernetes, GitHub Actions y Argo."
+  - en: "Built internal microservices and APIs that improved system performance by 35%."
+    es: "Desarrollé microservicios y APIs internas que mejoraron el desempeño del sistema en 35 %."
+  - en: Mentored new developers and coordinated the sprints.
+    es: Di mentoría a desarrolladores nuevos y coordiné los sprints.
+  tech:
+  - Scala
+  - Python
+  - Kafka
+  - gRPC
+  - GraphQL
+  - PostgreSQL
+  - Neo4j
+  - Kubernetes
+  - AWS
+  - Azure
+- id: backend
+  start: "2023-02"
+  end: "2024-02"
+  period:
+    en: Feb 2023 to Feb 2024
+    es: Feb 2023 a feb 2024
+  role:
+    en: Backend Engineer
+    es: Ingeniero Backend
+  org: ArkonData
+  summary:
+    en: "I built platform features in Scala and Python with unit and integration tests, and wrote data extraction over Databricks and JDBC sources."
+    es: "Desarrollé funcionalidades de la plataforma en Scala y Python con pruebas unitarias y de integración, y programé extracción de datos sobre Databricks y fuentes JDBC."
+  highlights: []
+  tech:
+  - Scala
+  - Python
+  - Kafka
+  - gRPC
+  - GraphQL
+  - PostgreSQL
+  - Neo4j
+  - Docker
+- id: izai
+  start: "2021-01"
+  end: "2023-02"
+  period:
+    en: Jan 2021 to Feb 2023
+    es: Ene 2021 a feb 2023
+  role:
+    en: "Backend Developer & Technical Lead"
+    es: Desarrollador Backend y Líder Técnico
+  org: IZAI
+  org_long: "Instituto Zacatecano de Transparencia, Acceso a la Información y Protección de Datos Personales"
+  summary:
+    en: "I designed and built SIVOT, a web system that verifies and scores the public information government bodies must publish. I was the platform's technical lead and its only backend developer."
+    es: "Diseñé y construí SIVOT, un sistema web que verifica y califica la información pública que los sujetos obligados deben publicar. Fui el líder técnico de la plataforma y su único desarrollador backend."
+  stat:
+    num: "65"
+    unit: "%"
+    label:
+      en: fewer hours in the process it automated
+      es: menos horas en el proceso que automatizó
+  highlights:
+  - en: "The transparency institutes of four Mexican states use SIVOT (Zacatecas, Durango, Nuevo León and Baja California)."
+    es: "SIVOT lo usan los institutos de transparencia de cuatro estados (Zacatecas, Durango, Nuevo León y Baja California)."
+  - en: Moved monolithic systems to DigitalOcean and supported a module of the national transparency platform.
+    es: Migré sistemas monolíticos a DigitalOcean y di soporte a un módulo de la Plataforma Nacional de Transparencia.
+  tech:
+  - Python
+  - Django
+  - MySQL
+  - DigitalOcean
+- id: gobzac
+  start: "2019-08"
+  end: "2021-01"
+  period:
+    en: Aug 2019 to Jan 2021
+    es: Ago 2019 a ene 2021
+  role:
+    en: Software Engineer
+    es: Ingeniero de Software
+  org: Gobierno de Zacatecas
+  org_long: "Factoría, Secretaría de Economía"
+  summary:
+    en: I built Factoría POA in a team of five. It is a web application that manages the state's Annual Operating Plan and tracks its budget.
+    es: Construí Factoría POA en un equipo de cinco. Es una aplicación web que gestiona el Programa Operativo Anual del estado y da seguimiento a su presupuesto.
+  stat:
+    num: "90"
+    unit: "%"
+    label:
+      en: or more test coverage with TDD
+      es: o más de cobertura de pruebas con TDD
+  highlights: []
+  tech:
+  - Python
+  - Django
+  - MySQL
+  - TDD
